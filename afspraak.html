@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>tandartsafspraak</title>
+</head>
+<body>
+<h3>informatie tandartspraktijk</h3>
+<p>Met ons vaste team proberen wij uw tandarts bezoek zo aangenaam mogelijk te maken. Wanneer u voor het eerst bij ons in de stoel plaatsneemt zullen wij uw gebit controleren met behulp van röntgenfoto’s. Vervolgens stellen wij een behandelplan voor u op, zodat u precies weet wat u kunt verwachten tijdens eventuele vervolgafspraken. Wij adviseren om altijd tweemaal per jaar een afspraak in te plannen bij één van onze gediplomeerde preventieassistentes. Een goede mondhygiëne is van essentieel belang voor uw algehele gezondheid. Wij vinden het belangrijk dat onze patiënten zich hiervan bewust zijn en helpen u op een ongedwongen manier graag op weg om dit samen voor elkaar te krijgen. Naast reguliere tandheelkundige behandelingen zijn wij gespecialiseerd in esthetische tandheelkunde. Wilt u onze praktijk vooraf bekijken? Bekijk dan eens onze virtuele tour door de praktijk. </p>
+<figure>
+<img src="afbeeldingen/tandarts.jpg" alt="patient" title="patient" width="300" height="150">
+<img src="afbeeldingen/tandarts.jpg" alt="tandarts" title=”tandarts” width="300" height="150">
+<img src="afbeeldingen/tandartsen.jpg" alt="tandartsen" title="tandartsen" width="300" height="150">
+</figure>
+<h3>Tandartspraktijk</h3>
+<form
+  action="https://formspree.io/f/meqnberg"
+  method="POST">
+<fieldset>
+<legend>Persoonlijke gegevens</legend><br>
+<label for="naam">Naam:</label>
+<input id="naam" type="text" name="naam"><br><br>
+<input type="radio" name="geslacht" value="man" checked>Man
+<input type="radio" name="geslacht" value="vrouw">Vrouw
+<input type="radio" name="geslacht" value="anders">Anders <br><br>
+<label for="adres">Adres:</label>
+<input type="text" id="adres" name="adres"><br><br>
+<label for="postcode">postcode:</label>
+<input type="text" id="postcode" name="postcode"><br><br>
+<label for="woonplaats">woonplaats:</label>
+<input type="text" id="woonplaats" name="woonplaats">
+<label>
+   uw email:
+   <input type="email" name="email">
+ </label>
+</fieldset>
+<fieldset>
+  <legend>Beschrijving van de klachten</legend><br>
+  <b>Beschrijving van uw klachten</b><br>
+  <input type="checkbox" name="onderwerpen" value="ja">zenuwpijn
+  <input type="checkbox" name="onderwerpen" value="ja">bloedend tandvlees
+  <input type="checkbox" name="onderwerpen" value="ja">kiespijn
+  <input type="checkbox" name="onderwerpen" value="ja">tandsteen<br><br>
+<label for="fotobestand">selecteer een fotobestand</label>
+  <input type="file" id="fotobestand" name="fotobestand"><br><br>
+  </fieldset>
+  <fieldset>
+    <legend>toelichting van de klachten</legend><br>
+    <b>typ hier uw bericht</b>
+    <textarea name=bericht maxlength="1500">
+      </textarea>
+      <b> selecteer een datum voor uw tandartsafspraak</b><br>
+      <input type="date" name="datum" max="2080-12-31"><br><br>
+      </fieldset><br>
+      <input type="submit" value="verzend">
+      </form>
+</body>
+</html>
